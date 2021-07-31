@@ -1,0 +1,50 @@
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.open {
+    font-size: 50px;
+    border: 1px solid black;
+    width: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.modal {
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 100px 200px;
+    font-size: 50px;
+    z-index: 2;
+    transition: transform 0.4s;
+    position:relative;
+    background-color:white;
+    margin-top: 50px;
+}
+
+.btn {
+    padding: 20px 30px;
+    background-color: rgb(219, 207, 141);
+    border-radius: 4px;
+}
+
+.mask {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.mask.hidden {
+    display: none;
+}
+
+.modal.hidden {
+    transform: translate(0, -600px);
+}
