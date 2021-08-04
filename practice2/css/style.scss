@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#open {
+    padding: 8px 20px;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(160, 155, 155, 0.342); // animationにする
+    }
+}
+
+#mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    opacity: 0;
+}
+
+#modal {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    display: none;
+
+    p {
+        padding: 4px;
+        text-align: left;
+    }
+
+    #close {
+        padding: 15px 20px;
+        background-color: white;
+        border-radius: 4px;
+
+        &:hover {
+            background-color: rgba(61, 59, 59, 0.363);           
+        }
+    }
+
+}
